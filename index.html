@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- css link -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- accordion start -->
+    <h1 class=" text-center">accordion</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="accordion" id="accordion_ex">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading_1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_1" aria-expanded="true" aria-controls="collapse_1">
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div id="collapse_1" class="accordion-collapse collapse show" aria-labelledby="heading_1" data-bs-parent="#accordion_ex">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading_2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_2" aria-expanded="false" aria-controls="collapse_2">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="collapse_2" class="accordion-collapse collapse" aria-labelledby="heading_2" data-bs-parent="#accordion_ex">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading_3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_3" aria-expanded="false" aria-controls="collapse_3">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="collapse_3" class="accordion-collapse collapse" aria-labelledby="heading_3" data-bs-parent="#accordion_ex">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelopen_1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panel_stay_1" aria-expanded="true" aria-controls="panel_stay_1">
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div id="panel_stay_1" class="accordion-collapse collapse show" aria-labelledby="panelopen_1">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelopen_2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel_stay_2" aria-expanded="false" aria-controls="panel_stay_2">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="panel_stay_2" class="accordion-collapse collapse" aria-labelledby="panelopen_2">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelopen_3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel_stay_3" aria-expanded="false" aria-controls="panel_stay_3">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="panel_stay_3" class="accordion-collapse collapse" aria-labelledby="panelopen_3">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- accordion end -->
+
+    <!-- Alerts start -->
+    <h1 class=" text-center">Alerts</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="alert alert-danger" role="alert">
+            A simple primary alert—check it out!
+          </div>
+          <div id="liveAlertPlaceholder"></div>
+            <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+            <div class="alert alert-danger" role="alert">
+              A simple danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+            </div>
+        </div>
+        <div class="col-md-6">
+          <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Alerts end -->
+
+    <!-- badge start -->
+    <h1 class=" text-center">badge</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h6 class=" text-center">button</h6>
+          <div>
+          <button type="button" class="btn btn-primary">
+            Notifications <span class="badge text-bg-secondary">4</span>
+          </button>
+        </div>
+        <h6 class=" text-center">positioned</h6>
+        <div>
+          <button type="button" class="btn btn-primary position-relative">
+            Inbox
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              99+
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </button>
+        </div>
+        </div>
+        <div class="col-md-6">
+          <h6 class=" text-center">background color button</h6>
+          <div>
+            <span class="badge text-bg-primary">Primary</span>
+            <span class="badge text-bg-danger">Danger</span>
+            <span class="badge text-bg-warning">Warning</span>
+          </div>
+          <h6 class=" text-center">pill badge</h6>
+          <div>
+            <span class="badge rounded-pill text-bg-success">Success</span>
+            <span class="badge rounded-pill text-bg-info">Info</span>
+            <span class="badge rounded-pill text-bg-dark">Dark</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- badge end -->
+
+    <!-- Breadcrumb start -->
+    <h1 class=" text-center">Breadcrumb</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Home</li>
+              </ol>
+            </nav>
+            
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Library</li>
+              </ol>
+            </nav>
+            
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Library</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Data</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Library</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- Breadcrumb end -->
+
+    <!-- Buttons start -->
+    <h1 class=" text-center">button</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div>
+          <a class="btn btn-primary" href="#" role="button">Link</a>
+            <button class="btn btn-primary" type="submit">Button</button>
+            <input class="btn btn-primary" type="button" value="Input">
+            <input class="btn btn-primary" type="submit" value="Submit">
+            <input class="btn btn-primary" type="reset" value="Reset">
+          </div><br><br>
+          <div>
+            <button type="button" class="btn btn-outline-success">Success</button>
+            <button type="button" class="btn btn-outline-info">Info</button>
+            <button type="button" class="btn btn-outline-warning">Warning</button>
+            <button type="button" class="btn btn-outline-dark">Dark</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div>
+            <button type="button" class="btn btn-primary" disabled>Primary button</button>
+            <button type="button" class="btn btn-secondary" disabled>Button</button>
+            <button type="button" class="btn btn-outline-primary" disabled>Primary button</button>
+            <button type="button" class="btn btn-outline-secondary" disabled>Button</button>
+          </div><br><br>
+          <div class="d-grid gap-2">
+            <button class="btn btn-primary" type="button">Button</button>
+            <button class="btn btn-primary" type="button">Button</button>
+          </div><br>
+          <div>
+            <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">Toggle link</a>
+            <a href="#" class="btn btn-primary active" role="button" data-bs-toggle="button" aria-pressed="true">Active toggle link</a>
+            <a class="btn btn-primary disabled" aria-disabled="true" role="button" data-bs-toggle="button">Disabled toggle link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Buttons end -->
+
+    <!-- button group start -->
+    <h1 class=" text-center">button group</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="btn-group" role="group" aria-label="mixed_color_button">
+            <button type="button" class="btn btn-danger">Left</button>
+            <button type="button" class="btn btn-warning">Middle</button>
+            <button type="button" class="btn btn-success">Right</button>
+          </div>
+          <div class="btn-group" role="group" aria-label="outline-style-button">
+            <button type="button" class="btn btn-outline-primary">Left</button>
+            <button type="button" class="btn btn-outline-primary">Middle</button>
+            <button type="button" class="btn btn-outline-primary">Right</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="btn-group" role="group" aria-label="radio-button">
+            <input type="radio" class="btn-check" name="button-radio" id="button-1" autocomplete="off" checked>
+            <label class="btn btn-outline-primary" for="button-1">Radio 1</label>
+          
+            <input type="radio" class="btn-check" name="button-radio" id="button-2" autocomplete="off">
+            <label class="btn btn-outline-primary" for="button-2">Radio 2</label>
+          
+            <input type="radio" class="btn-check" name="button-radio" id="button-3" autocomplete="off">
+            <label class="btn btn-outline-primary" for="button-3">Radio 3</label>
+          </div>
+          <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+            <button type="button" class="btn btn-primary">1</button>
+            <button type="button" class="btn btn-danger">2</button>
+          
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- button group end -->
+
+    <!-- card start -->
+    <h1 class="text-center">Card</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+            <img src="image/blog_3.jpg" class="card-img-top" alt="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+            <img src="image/blog_5.jpg" class="card-img-top" alt="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- card end -->
+
+    <!-- Carousel start -->
+    <h1 class="text-center">Carousel</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div id="c-indicator" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#c-indicator" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#c-indicator" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#c-indicator" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="image/blog_3.jpg" class="d-block w-100" alt="carousel">
+              </div>
+              <div class="carousel-item">
+                <img src="image/blog_4.jpg" class="d-block w-100" alt="carousel">
+              </div>
+              <div class="carousel-item">
+                <img src="image/blog_5.jpg" class="d-block w-100" alt="carousel">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#c-indicator" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#c-indicator" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div id="c-auto" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="image/blog_3.jpg" class="d-block w-100" alt="carousel">
+              </div>
+              <div class="carousel-item">
+                <img src="image/blog_4.jpg" class="d-block w-100" alt="carousel">
+              </div>
+              <div class="carousel-item">
+                <img src="image/blog_5.jpg" class="d-block w-100" alt="carousel">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#c-auto" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#c-auto" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Carousel end -->
+
+    <!-- Collapse start -->
+    <h1 class="text-center">Collapse</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse-ex" role="button" aria-expanded="false" aria-controls="collapse-ex">Toggle first element</a>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="collapse-ex multiCollapseExample2">Toggle both elements</button>
+          </p>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse show" id="collapse-ex">
+                <div class="card card-body">
+                  Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample2">
+                <div class="card card-body">
+                  Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div>
+            <p>
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#c-w-ex" aria-expanded="false" aria-controls="c-w-ex">
+                Toggle width collapse
+              </button>
+            </p>
+            <div style="min-height: 120px;">
+              <div class="collapse collapse-horizontal" id="c-w-ex">
+                <div class="card card-body" style="width: 300px;">
+                  This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Collapse end -->
+
+    <!-- Dropdowns start -->
+    <h1 class="text-center">Dropdowns</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <!-- Example single danger button -->
+          <div class="btn-group">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Danger</button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+              </ul>
+          </div>
+          <!-- Example single primary button -->
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Primary</button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+              </ul>
+          </div>
+          <!-- Example single success button -->
+          <div class="btn-group">
+            <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Success</button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+              </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          
+        </div>
+      </div>
+    </div>
+    <!-- Dropdowns end -->
+   
+
+  
+
+  <!-- js link -->
+  <script src="js/script.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
